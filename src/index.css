@@ -1,13 +1,67 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
 }
+.app{
+    border: 2px solid black;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0 auto;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.form{
+   display: flex;
+   flex-direction: column;
+   align-items: space-around;
+   justify-content: center;
+   padding: 10px;
+   gap: 10px;
+}
+.form--input, .button{
+    padding: 10px;
+    border: 1px solid black;
+    
+}
+.button{
+    background-color: lightslategray;
+    color: whitesmoke;
+    font-size: 20px;
+}
+.meme-img{
+    position: relative;
+    border: 2px solid red;
+    width: 100%;
+    height: fit-content;
+}
+.meme-text{
+    position: absolute;
+    font-size: 80px;
+    color: white;
+    text-shadow: rgba(0,1px, 3px ,  rgba(0,0,0,0.3)),
+     rgba(1px,1.2px, 3.2px , rgba(0,0,0,0.3)),
+    rgba(1.8,2px, 4px , rgba(0,0,0,0.3)
+    );
+    right: auto;
+    left: auto;
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+}
+.top{
+    top: 0;
+}
+.bottom{
+    bottom: 0;
+}
+.meme-img{
+    width: 100%;
+}
+.meme-img img{
+    width: 100%;
 }
